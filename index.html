@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flower Shop Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- applying css -->
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        /* header css starts */
+        header{
+            background-color: rgb(255, 192, 203);
+            display:flex;
+            justify-content: space-around;
+        }
+
+        /* for logo we define size and weight to made it look bold */
+        .logo{
+            font-size: 2rem;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+  
+        .logo span{
+            color:black;
+        }
+
+        .navbar{
+            margin-left:4rem;
+            margin-top: 1rem;
+        }
+         
+        /* the font size of the anchor tags (home,about us,products,review,contact) is defined */
+        .navbar a{
+            font-size:1rem;
+            margin-left:3rem;
+        }
+
+        /* if we move the cursor over the links then there color change to green */
+        .navbar a:hover{
+            background-color: greenyellow;
+        }
+
+        /* For responsive webpage we apply media query */
+         @media(max-width:768px) {
+           header a{ margin:1rem;
+                    padding:1rem;
+                    display:block;
+                    } 
+        } 
+
+        /* header css ends */
+
+        /* home css starts
+        here we put a image and sizes it accordingly */
+        #home{
+            display: flex;
+            align-items:center;
+            min-height: 100vh;
+            background: url(image/home_image.jpg);
+            background-size: cover;
+            background-position: center;
+            padding-left:5rem;
+        }
+
+        #home span{
+            color:blueviolet;
+            line-height: 2.5rem;
+        }
+        /* home css ends */
+
+
+        /* about css starts */
+        #about{
+            text-align: center;
+            font-size: 1rem;
+            margin:1rem;
+            padding:1rem;
+        }
+        #about span{
+            color:red;
+        }
+        .content{
+            display:flex;
+        }
+
+        .choose{
+            margin:2rem;
+        }
+        /* about css ends  */
+
+
+        /* products css starts  */
+        #products div{
+            width:200px;
+            height:200px;
+            display:inline-block;
+            margin:4rem;
+           
+        }
+
+        #products h3{
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        /* one, two,three, four are the four products id */
+        #one{
+            border:2px solid black;
+            background-image: url(image/rose.jpg);
+            background-size:cover;
+        }
+
+        #rose{
+            color:white;
+            font-size: larger;
+        }
+
+        #two{
+            border:2px solid black;
+            background-image: url(image/tulip.jpg);
+            background-size:cover;
+        }
+
+        #tulip{
+            color:white;
+            font-size: larger;
+        }
+
+
+        #three{
+            border:2px solid black;
+            background-image: url(image/marigold.jpg);
+            background-size:cover;
+            
+        }
+
+        #marigold{
+            color:white;
+            font-size: larger;
+        }
+
+        #four{
+            border:2px solid black;
+            background-image: url(image/hibiscus.jpg);
+            background-size:cover;
+        }
+
+        #hibiscus{
+            color:white;
+            font-size: larger;
+        }
+
+        #five{
+            border:2px solid black;
+            background-image: url(image/daisy.jpg);
+            background-size:cover;
+        }
+
+        #daisy{
+            color:white;
+            font-size: larger;
+        }
+
+        #six{
+            border:2px solid black;
+            background-image: url(image/sunflower.jpg);
+            background-size:cover;
+        }
+
+        #sunflower{
+            color:white;
+            font-size: larger;
+        }
+
+        #seven{
+            border:2px solid black;
+            background-image: url(image/lotus.jpg);
+            background-size:cover;
+        }
+
+        #lotus{
+            color:white;
+            font-size: larger;
+        }
+
+        /* products css ends */
+
+        /* review css starts */
+        #review{
+            display:inline;
+        }
+
+        #review h3{
+            font-size:2rem;
+            text-align: center;
+        }
+
+        #review div{
+            padding:1rem;
+        }
+
+        /* review css ends */
+
+        /* contact css starts */
+        #contact{
+            margin-top:2rem;
+            border:1px solid black;
+            background-color:burlywood;
+        }
+         
+        /* take the heading contact in the center using text-align */
+        #contact h2{
+            text-align: center;
+            margin-bottom:2rem;
+        }
+
+        #contact p{
+            display: inline;
+            margin:9rem;
+            padding:5rem;
+        }
+
+        /* contact css ends */
+
+        /* footer css starts */
+
+        footer{
+            background:grey;
+            padding: 2rem;
+            text-align: center;
+            color:white;
+        }
+
+        /* footer css ends */
+        
+
+    </style>
+</head>
+<body>
+
+    <!-- header section starts -->
+
+    <header>
+        <a href="#" class="logo">Fresh Flowers<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="#home">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span>home</span>
+            </a>
+
+            <a href="#about">About Us</a>
+            <a href="#products">Products</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact-us</a>
+        </nav>
+    </header>
+   
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+
+    <section id="home">
+        <p>
+        <span>Natural and beautiful flowers</span> <br>
+        Do you want quality flowers? Wow! You are at the right place. 
+        </p>
+    </section>
+
+     <!-- home section ends-->
+
+     <!-- about us section starts -->
+        <section id="about">
+            <h1> <span>About</span>Us</h1> <br>
+                <div class="content">
+                    <div class="image">
+                        <img src="image/aboutus_image.jpg" alt="">
+                    </div>
+                    <section class="choose">
+                    <h3>Why choose us?</h3>
+                    <p>We provide the freshest flowers and the most beautiful
+                         arrangements for every.  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Quam blanditiis aliquam temporibus perferendis cupiditate,
+                           vero in tempora delectus corporis ab tenetur architecto optio,
+                            accusantium officiis eius facilis repudiandae magni veniam.  <br> <br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, delectus molestiae officia temporibus beatae quis deserunt impedit repudiandae minus obcaecati iste numquam fuga distinctio? Molestias accusantium ab qui ad obcaecati.
+                        </p>
+                </section>
+            </div>
+        </section>
+     <!-- about us section ends -->
+
+     <!-- products section starts -->
+     <div id="products">
+        <h3>Products</h3>
+            <div id="one">
+                <span id="rose">Rose</span>
+            </div>
+           
+            <div id="two"> 
+                <span id="tulip">Tulip</span>
+            </div>
+
+            <div id="three">
+                 <span id="marigold">Marigold</span>
+             </div>
+
+            <div id="four">
+                 <span id="hibiscus">Hibiscus</span>
+            </div>
+
+            <div id="five">
+                <span id="daisy">Daisy</span>
+           </div>
+
+           <div id="six">
+            <span id="sunflower">Sunflower</span>
+           </div>
+
+           <div id="seven">
+            <span id="lotus">Lotus</span>
+           </div>
+
+     </div>
+      <!-- products section ends -->
+
+       <!-- review section starts -->
+        <section id="review">
+            <h3>Reviews</h3>
+            <div>
+                <h5>Ankush Mishra</h5>
+                <p>this is an amazing flower shop. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde corporis odio nihil similique nulla hic itaque, impedit sapiente dolores deleniti nam sint, eius, sit iusto laudantium id molestias. Excepturi.</p>
+            </div>
+            <div>
+                <h5>Priyanka Rajpurohit</h5>
+                <p>Wonderful! I like the flowers. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quod, dignissimos numquam quisquam, dolore autem facilis pariatur aspernatur dolorem magni optio debitis veritatis culpa odit vitae eos vero suscipit incidunt?</p>
+            </div>
+            <div>
+                <h5>Shivi Sharma</h5>
+                <p>Yes they are the best sellers. They provide fresh flowers. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi eum blanditiis quia maiores rem sint numquam dicta recusandae possimus provident. Vero omnis at nihil placeat consectetur necessitatibus cupiditate molestias cum.</p>
+            </div>
+        </section>
+         <!-- review section ends -->
+
+     <!-- contact section starts -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email:info@freshflowers.com</p>
+            <p>Phone:123-456-7890</p>
+        </section>
+     <!-- contact section ends -->
+
+     <!-- footer section starts -->
+       <footer> 
+        <p> &copy; 2024 Fresh Flowers Shop.All rights reserved.</p>
+       </footer>
+     <!-- footer section ends -->
+</body>
+</html>
